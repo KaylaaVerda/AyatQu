@@ -7,9 +7,10 @@ matplotlib>=3.7
 seaborn>=0.12
 PySastrawi>=1.2.0
 jupyter>=1.0
+altair>=5.0
 
 # Opsional: hubungkan model bahasa untuk komponen RAG (isi LLM_FN di notebook)
 # anthropic
 
 # Tahap berikutnya: aplikasi
-streamlit>=1.30
+streamlit>=1.36

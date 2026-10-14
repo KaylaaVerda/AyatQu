@@ -2,22 +2,42 @@
 
 Pengembangan Chatbot AyatQu untuk Pencarian Ayat Al-Qur'an Berbasis Topik Menggunakan Retrieval-Augmented Generation dengan Perbandingan TF-IDF dan BM25 serta Perluasan Kueri Bahasa Awam.
 
-Proyek mata kuliah Sistem Temu Kembali Informasi (STKI). Paket ini berisi **seluruh pipeline sebelum aplikasi Streamlit**.
+Proyek mata kuliah Sistem Temu Kembali Informasi (STKI). Repo ini berisi pipeline evaluasi dan aplikasi Streamlit multi-halaman untuk pencarian ayat.
 
 ## Cara menjalankan
 
+Pasang dependensi dari folder proyek:
+
 ```bash
-pip install -r requirements.txt
-jupyter notebook AyatQu_Pipeline.ipynb
+python -m pip install -r requirements.txt
 ```
 
-Jalankan semua sel dari atas ke bawah. Notebook harus dijalankan dari folder ini (atau subfoldernya).
-PySastrawi wajib dipasang agar konfigurasi stemming (C3 dan C4) ikut berjalan. Tanpa itu, notebook tetap jalan tetapi hanya menguji C1 dan C2.
+Jalankan semua sel `AyatQu_Pipeline.ipynb` dari atas ke bawah untuk membangun data, konfigurasi, tabel evaluasi, dan grafik. Notebook harus dijalankan dari folder ini (atau subfoldernya). PySastrawi wajib dipasang agar konfigurasi stemming (C3 dan C4) ikut berjalan.
+
+Setelah notebook selesai, jalankan chatbot:
+
+```bash
+python -m streamlit run app.py
+```
+
+Di Windows, bila perintah `python` tidak dikenali, gunakan launcher:
+
+```powershell
+py -m pip install -r requirements.txt
+py -m streamlit run app.py
+```
+
+Navigasi aplikasi berisi **Pencarian Ayat**, **Evaluasi**, **Ringkasan**, dan **Tentang Aplikasi**. Untuk memakai ringkasan model bahasa, isi API key pada widget password di halaman Pencarian Ayat. API key tidak perlu dimasukkan untuk menggunakan pencarian dan ringkasan lokal.
 
 ## Isi folder
 
 ```
 ayatqu/
+├── app.py                      entrypoint navigasi Streamlit
+├── ui.py                       komponen UI, tema, dan loader data
+├── views/                      empat halaman aplikasi
+├── .streamlit/config.toml      tema Streamlit
+├── ayatqu_core.py              mesin retrieval dan guardrail
 ├── AyatQu_Pipeline.ipynb        notebook utama (preprocessing sampai ekspor konfigurasi)
 ├── expansion_dict.json          kamus query expansion (untuk divalidasi dosen atau ustaz)
 ├── requirements.txt
