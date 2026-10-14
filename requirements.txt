@@ -12,4 +12,4 @@ jupyter>=1.0
 # anthropic
 
 # Tahap berikutnya: aplikasi
-# streamlit
+streamlit>=1.30
