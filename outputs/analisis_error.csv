@@ -1,0 +1,6 @@
+query_id,kueri,nDCG@5,dugaan_penyebab
+Q02,ayat tentang sabar saat menghadapi ujian hidup,0.0,ayat relevan tersaingi ayat lain yang lebih sering memuat istilah kueri (topik tersebar atau istilah umum)
+Q08,ayat tentang kejujuran,0.0,ayat relevan tersaingi ayat lain yang lebih sering memuat istilah kueri (topik tersebar atau istilah umum)
+Q26,ayat tentang berdoa,0.139,ayat relevan tersaingi ayat lain yang lebih sering memuat istilah kueri (topik tersebar atau istilah umum)
+Q21,ayat tentang minuman keras,0.14,ayat relevan tersaingi ayat lain yang lebih sering memuat istilah kueri (topik tersebar atau istilah umum)
+Q18,ayat tentang sifat sombong,0.339,ayat relevan tersaingi ayat lain yang lebih sering memuat istilah kueri (topik tersebar atau istilah umum)

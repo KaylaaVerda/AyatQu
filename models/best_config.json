@@ -1,0 +1,44 @@
+{
+  "preprocessing_config": "C3_stem",
+  "metode": "bm25",
+  "k1": 1.2,
+  "b": 0.5,
+  "ekspansi_kueri": true,
+  "qe_weight": 0.25,
+  "ambang_skor_ternormalisasi": 0.26,
+  "top_k": 5,
+  "sastrawi_dipakai": true,
+  "stopword_dipakai": false,
+  "file_qrels": "data/eval/qrels.csv",
+  "status_qrels": "DRAF AI, belum divalidasi manusia",
+  "hasil_test": {
+    "TF-IDF": {
+      "P@5": 0.5867,
+      "P@5_ketat": 0.4267,
+      "MRR": 0.8,
+      "nDCG@5": 0.6113,
+      "Recall@10": 0.3867
+    },
+    "BM25": {
+      "P@5": 0.56,
+      "P@5_ketat": 0.4533,
+      "MRR": 0.7167,
+      "nDCG@5": 0.6078,
+      "Recall@10": 0.3876
+    },
+    "TF-IDF + QE": {
+      "P@5": 0.6,
+      "P@5_ketat": 0.4133,
+      "MRR": 0.8333,
+      "nDCG@5": 0.6171,
+      "Recall@10": 0.3824
+    },
+    "BM25 + QE": {
+      "P@5": 0.5867,
+      "P@5_ketat": 0.44,
+      "MRR": 0.7917,
+      "nDCG@5": 0.6248,
+      "Recall@10": 0.399
+    }
+  }
+}

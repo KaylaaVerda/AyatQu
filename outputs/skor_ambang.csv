@@ -1,0 +1,37 @@
+query_id,kueri,in_scope,split,norm_top1
+Q01,ayat tentang sabar,1,dev,0.5549234064756013
+Q02,ayat tentang sabar saat menghadapi ujian hidup,1,test,0.16158666310809272
+Q03,ayat tentang bersyukur,1,dev,0.5053740348477939
+Q04,ayat tentang berbakti kepada orang tua,1,test,0.4475722974751628
+Q05,ayat tentang shalat,1,dev,0.5856921485660669
+Q06,ayat tentang rezeki,1,test,0.45888739279998525
+Q07,ayat tentang menuntut ilmu,1,dev,0.23205007555518556
+Q08,ayat tentang kejujuran,1,test,0.3316044624673584
+Q09,ayat tentang tawakal,1,dev,0.3758930839473357
+Q10,ayat tentang taubat,1,test,0.6047461250659472
+Q11,ayat tentang memaafkan kesalahan orang lain,1,dev,0.5085448325214079
+Q12,ayat tentang sedekah,1,test,0.3853299626675056
+Q13,ayat tentang puasa,1,dev,0.4238412501284269
+Q14,ayat tentang riba,1,test,0.6457171125086201
+Q15,ayat tentang pernikahan,1,dev,0.2673703255457068
+Q16,ayat tentang anak yatim,1,test,0.5747845506341799
+Q17,ayat tentang berlaku adil,1,dev,0.6044550997623908
+Q18,ayat tentang sifat sombong,1,test,0.2776136016084283
+Q19,ayat tentang utang piutang,1,dev,0.19745772097204814
+Q20,ayat tentang kematian,1,test,0.3853407456074489
+Q21,ayat tentang minuman keras,1,dev,0.2807078884179969
+Q22,ayat tentang berjudi,1,test,0.43944173136824405
+Q23,ayat tentang ghibah,1,dev,0.255363327785655
+Q24,ayat tentang berbuat baik kepada tetangga,1,test,0.4515215602184058
+Q25,ayat tentang cobaan dan musibah,1,dev,0.2058509042058579
+Q26,ayat tentang berdoa,1,test,0.5504399408778601
+Q27,ayat tentang hari kiamat,1,dev,0.6675456214088104
+Q28,ayat tentang iri dan dengki,1,test,0.31336934739689337
+Q29,ayat yang bikin hati tenang,1,dev,0.4023678482524742
+Q30,ayat tentang jangan putus asa dari rahmat Allah,1,test,0.5757593302886516
+Q31,resep nasi goreng enak,0,dev,0.1073174332639805
+Q32,cara install python di laptop,0,test,0.08573627831314709
+Q33,harga emas hari ini,0,dev,0.25266628825999066
+Q34,prediksi skor sepak bola malam ini,0,test,0.0691092216643727
+Q35,cara membuat kue bolu,0,dev,0.14097151966932217
+Q36,tips lolos wawancara kerja,0,test,0.1311059848455926
