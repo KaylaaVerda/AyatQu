@@ -1,0 +1,110 @@
+topik,istilah,df_di_korpus,status
+sabar,bersabar,17,dipakai
+sabar,bersabarlah,26,dipakai
+sabar,kesabaran,12,dipakai
+sabar,sabarlah,2,dipakai
+sabar,tabah,0,dibuang (tidak ada di korpus)
+sabar,teguh,16,dipakai
+syukur,bersyukur,48,dipakai
+syukur,bersyukurlah,6,dipakai
+syukur,nikmat,117,dipakai
+syukur,karunia,79,dipakai
+orang tua,ibu bapak,3,dipakai
+orang tua,bapak,43,dipakai
+orang tua,ibu,31,dipakai
+orang tua,berbakti,8,dipakai
+orang tua,kedua orang tua,0,dibuang (tidak ada di korpus)
+shalat,shalat,51,dipakai
+shalat,sembahyang,27,dipakai
+shalat,mendirikan shalat,21,dipakai
+rezeki,rezeki,93,dipakai
+rezeki,rezekimu,2,dipakai
+rezeki,karunia,79,dipakai
+rezeki,menafkahkan,29,dipakai
+ilmu,ilmu,45,dipakai
+ilmu,pengetahuan,61,dipakai
+ilmu,berilmu,3,dipakai
+ilmu,orang yang berilmu,3,dipakai
+jujur,kebenaran,117,dipakai
+jujur,dusta,32,dipakai
+jujur,berdusta,20,dipakai
+jujur,bohong,12,dipakai
+jujur,benar,494,dipakai
+tawakal,bertawakkal,27,dipakai
+tawakal,bertawakal,2,dipakai
+tawakal,tawakkal,0,dibuang (tidak ada di korpus)
+taubat,taubat,35,dipakai
+taubat,bertaubat,42,dipakai
+taubat,ampun,35,dipakai
+taubat,ampunan,44,dipakai
+maaf,maaf,8,dipakai
+maaf,memaafkan,15,dipakai
+maaf,pemaaf,6,dipakai
+maaf,ampun,35,dipakai
+sedekah,sedekah,7,dipakai
+sedekah,bersedekah,6,dipakai
+sedekah,menafkahkan,29,dipakai
+sedekah,zakat,34,dipakai
+puasa,puasa,2,dipakai
+puasa,berpuasa,10,dipakai
+puasa,ramadhan,1,dipakai
+riba,riba,7,dipakai
+pernikahan,nikah,2,dipakai
+pernikahan,menikahi,2,dipakai
+pernikahan,kawin,8,dipakai
+pernikahan,menikahkan,2,dipakai
+pernikahan,istri,2,dipakai
+pernikahan,suami,15,dipakai
+yatim,yatim,22,dipakai
+yatim,anak yatim,20,dipakai
+adil,adil,33,dipakai
+adil,keadilan,13,dipakai
+adil,berlaku adil,7,dipakai
+sombong,sombong,21,dipakai
+sombong,menyombongkan,41,dipakai
+sombong,angkuh,5,dipakai
+sombong,takabur,1,dipakai
+sombong,membanggakan diri,3,dipakai
+utang,utang,1,dipakai
+utang,hutang,4,dipakai
+utang,bermuamalah,2,dipakai
+utang,tunai,2,dipakai
+utang,menuliskannya,2,dipakai
+kematian,mati,110,dipakai
+kematian,kematian,22,dipakai
+kematian,ajal,8,dipakai
+kematian,wafat,2,dipakai
+minuman keras,khamar,9,dipakai
+minuman keras,khamr,0,dibuang (tidak ada di korpus)
+minuman keras,mabuk,4,dipakai
+minuman keras,minuman,19,dipakai
+judi,judi,2,dipakai
+judi,berjudi,2,dipakai
+judi,maisir,0,dibuang (tidak ada di korpus)
+judi,undian,1,dipakai
+ghibah,menggunjing,0,dibuang (tidak ada di korpus)
+ghibah,gunjing,0,dibuang (tidak ada di korpus)
+ghibah,mengumpat,0,dibuang (tidak ada di korpus)
+ghibah,mencela,9,dipakai
+ghibah,purba sangka,1,dipakai
+ghibah,prasangka,1,dipakai
+cobaan,cobaan,21,dipakai
+cobaan,musibah,8,dipakai
+cobaan,ujian,4,dipakai
+cobaan,menguji,15,dipakai
+cobaan,bencana,25,dipakai
+cobaan,kesulitan,9,dipakai
+doa,doa,14,dipakai
+doa,berdoa,43,dipakai
+doa,berdoalah,6,dipakai
+doa,memohon,19,dipakai
+doa,mohonlah,14,dipakai
+dengki,dengki,7,dipakai
+dengki,hasad,0,dibuang (tidak ada di korpus)
+dengki,iri,1,dipakai
+amanah,amanat,16,dipakai
+amanah,amanatmu,0,dibuang (tidak ada di korpus)
+amanah,dipercayai,3,dipakai
+janji,janji,75,dipakai
+janji,menepati,6,dipakai
+janji,memenuhi janji,5,dipakai

@@ -1,0 +1,37 @@
+query_id,query,gaya,split,in_scope
+Q01,ayat tentang sabar,pendek,dev,1
+Q02,ayat tentang sabar saat menghadapi ujian hidup,kalimat,test,1
+Q03,ayat tentang bersyukur,pendek,dev,1
+Q04,ayat tentang berbakti kepada orang tua,kalimat,test,1
+Q05,ayat tentang shalat,pendek,dev,1
+Q06,ayat tentang rezeki,pendek,test,1
+Q07,ayat tentang menuntut ilmu,pendek,dev,1
+Q08,ayat tentang kejujuran,pendek,test,1
+Q09,ayat tentang tawakal,istilah awam,dev,1
+Q10,ayat tentang taubat,pendek,test,1
+Q11,ayat tentang memaafkan kesalahan orang lain,kalimat,dev,1
+Q12,ayat tentang sedekah,pendek,test,1
+Q13,ayat tentang puasa,pendek,dev,1
+Q14,ayat tentang riba,pendek,test,1
+Q15,ayat tentang pernikahan,istilah awam,dev,1
+Q16,ayat tentang anak yatim,pendek,test,1
+Q17,ayat tentang berlaku adil,pendek,dev,1
+Q18,ayat tentang sifat sombong,pendek,test,1
+Q19,ayat tentang utang piutang,istilah awam,dev,1
+Q20,ayat tentang kematian,pendek,test,1
+Q21,ayat tentang minuman keras,istilah awam,dev,1
+Q22,ayat tentang berjudi,pendek,test,1
+Q23,ayat tentang ghibah,istilah awam,dev,1
+Q24,ayat tentang berbuat baik kepada tetangga,kalimat,test,1
+Q25,ayat tentang cobaan dan musibah,kalimat,dev,1
+Q26,ayat tentang berdoa,pendek,test,1
+Q27,ayat tentang hari kiamat,pendek,dev,1
+Q28,ayat tentang iri dan dengki,kalimat,test,1
+Q29,ayat yang bikin hati tenang,bahasa sehari-hari,dev,1
+Q30,ayat tentang jangan putus asa dari rahmat Allah,kalimat,test,1
+Q31,resep nasi goreng enak,di luar topik,dev,0
+Q32,cara install python di laptop,di luar topik,test,0
+Q33,harga emas hari ini,di luar topik,dev,0
+Q34,prediksi skor sepak bola malam ini,di luar topik,test,0
+Q35,cara membuat kue bolu,di luar topik,dev,0
+Q36,tips lolos wawancara kerja,di luar topik,test,0

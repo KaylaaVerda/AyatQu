@@ -1,0 +1,403 @@
+{
+  "kamus": [
+    {
+      "topik": "sabar",
+      "kunci": [
+        "sabar",
+        "bersabar",
+        "kesabaran"
+      ],
+      "istilah": [
+        "bersabar",
+        "bersabarlah",
+        "kesabaran",
+        "sabarlah",
+        "teguh"
+      ]
+    },
+    {
+      "topik": "syukur",
+      "kunci": [
+        "syukur",
+        "bersyukur",
+        "mensyukuri",
+        "terima kasih"
+      ],
+      "istilah": [
+        "bersyukur",
+        "bersyukurlah",
+        "nikmat",
+        "karunia"
+      ]
+    },
+    {
+      "topik": "orang tua",
+      "kunci": [
+        "orang tua",
+        "ortu",
+        "ibu bapak",
+        "ayah ibu",
+        "berbakti"
+      ],
+      "istilah": [
+        "ibu bapak",
+        "bapak",
+        "ibu",
+        "berbakti"
+      ]
+    },
+    {
+      "topik": "shalat",
+      "kunci": [
+        "shalat",
+        "salat",
+        "sholat",
+        "solat"
+      ],
+      "istilah": [
+        "shalat",
+        "sembahyang",
+        "mendirikan shalat"
+      ]
+    },
+    {
+      "topik": "rezeki",
+      "kunci": [
+        "rezeki",
+        "rejeki",
+        "nafkah"
+      ],
+      "istilah": [
+        "rezeki",
+        "rezekimu",
+        "karunia",
+        "menafkahkan"
+      ]
+    },
+    {
+      "topik": "ilmu",
+      "kunci": [
+        "ilmu",
+        "menuntut ilmu",
+        "belajar",
+        "pengetahuan"
+      ],
+      "istilah": [
+        "ilmu",
+        "pengetahuan",
+        "berilmu",
+        "orang yang berilmu"
+      ]
+    },
+    {
+      "topik": "jujur",
+      "kunci": [
+        "jujur",
+        "kejujuran",
+        "tidak bohong"
+      ],
+      "istilah": [
+        "kebenaran",
+        "dusta",
+        "berdusta",
+        "bohong",
+        "benar"
+      ]
+    },
+    {
+      "topik": "tawakal",
+      "kunci": [
+        "tawakal",
+        "tawakkal",
+        "bertawakal",
+        "pasrah"
+      ],
+      "istilah": [
+        "bertawakkal",
+        "bertawakal"
+      ]
+    },
+    {
+      "topik": "taubat",
+      "kunci": [
+        "taubat",
+        "tobat",
+        "bertaubat",
+        "bertobat"
+      ],
+      "istilah": [
+        "taubat",
+        "bertaubat",
+        "ampun",
+        "ampunan"
+      ]
+    },
+    {
+      "topik": "maaf",
+      "kunci": [
+        "maaf",
+        "memaafkan",
+        "pemaaf"
+      ],
+      "istilah": [
+        "maaf",
+        "memaafkan",
+        "pemaaf",
+        "ampun"
+      ]
+    },
+    {
+      "topik": "sedekah",
+      "kunci": [
+        "sedekah",
+        "infak",
+        "infaq",
+        "bersedekah",
+        "zakat"
+      ],
+      "istilah": [
+        "sedekah",
+        "bersedekah",
+        "menafkahkan",
+        "zakat"
+      ]
+    },
+    {
+      "topik": "puasa",
+      "kunci": [
+        "puasa",
+        "shaum",
+        "shiyam",
+        "ramadan",
+        "ramadhan"
+      ],
+      "istilah": [
+        "puasa",
+        "berpuasa",
+        "ramadhan"
+      ]
+    },
+    {
+      "topik": "riba",
+      "kunci": [
+        "riba",
+        "bunga bank",
+        "rente"
+      ],
+      "istilah": [
+        "riba"
+      ]
+    },
+    {
+      "topik": "pernikahan",
+      "kunci": [
+        "menikah",
+        "pernikahan",
+        "nikah",
+        "jodoh",
+        "rumah tangga",
+        "suami istri"
+      ],
+      "istilah": [
+        "nikah",
+        "menikahi",
+        "kawin",
+        "menikahkan",
+        "istri",
+        "suami"
+      ]
+    },
+    {
+      "topik": "yatim",
+      "kunci": [
+        "yatim",
+        "anak yatim",
+        "yatim piatu"
+      ],
+      "istilah": [
+        "yatim",
+        "anak yatim"
+      ]
+    },
+    {
+      "topik": "adil",
+      "kunci": [
+        "adil",
+        "keadilan",
+        "berlaku adil"
+      ],
+      "istilah": [
+        "adil",
+        "keadilan",
+        "berlaku adil"
+      ]
+    },
+    {
+      "topik": "sombong",
+      "kunci": [
+        "sombong",
+        "kesombongan",
+        "angkuh",
+        "takabur"
+      ],
+      "istilah": [
+        "sombong",
+        "menyombongkan",
+        "angkuh",
+        "takabur",
+        "membanggakan diri"
+      ]
+    },
+    {
+      "topik": "utang",
+      "kunci": [
+        "utang",
+        "hutang",
+        "piutang",
+        "pinjaman",
+        "pinjam"
+      ],
+      "istilah": [
+        "utang",
+        "hutang",
+        "bermuamalah",
+        "tunai",
+        "menuliskannya"
+      ]
+    },
+    {
+      "topik": "kematian",
+      "kunci": [
+        "kematian",
+        "mati",
+        "meninggal",
+        "ajal",
+        "wafat"
+      ],
+      "istilah": [
+        "mati",
+        "kematian",
+        "ajal",
+        "wafat"
+      ]
+    },
+    {
+      "topik": "minuman keras",
+      "kunci": [
+        "minuman keras",
+        "miras",
+        "khamr",
+        "khamar",
+        "mabuk",
+        "alkohol"
+      ],
+      "istilah": [
+        "khamar",
+        "mabuk",
+        "minuman"
+      ]
+    },
+    {
+      "topik": "judi",
+      "kunci": [
+        "judi",
+        "berjudi",
+        "taruhan",
+        "togel"
+      ],
+      "istilah": [
+        "judi",
+        "berjudi",
+        "undian"
+      ]
+    },
+    {
+      "topik": "ghibah",
+      "kunci": [
+        "ghibah",
+        "gibah",
+        "gosip",
+        "menggunjing",
+        "bergunjing"
+      ],
+      "istilah": [
+        "mencela",
+        "purba sangka",
+        "prasangka"
+      ]
+    },
+    {
+      "topik": "cobaan",
+      "kunci": [
+        "cobaan",
+        "musibah",
+        "ujian",
+        "bencana",
+        "kesulitan"
+      ],
+      "istilah": [
+        "cobaan",
+        "musibah",
+        "ujian",
+        "menguji",
+        "bencana",
+        "kesulitan"
+      ]
+    },
+    {
+      "topik": "doa",
+      "kunci": [
+        "doa",
+        "berdoa",
+        "dzikir",
+        "zikir"
+      ],
+      "istilah": [
+        "doa",
+        "berdoa",
+        "berdoalah",
+        "memohon",
+        "mohonlah"
+      ]
+    },
+    {
+      "topik": "dengki",
+      "kunci": [
+        "dengki",
+        "iri",
+        "iri hati",
+        "hasad",
+        "hasud"
+      ],
+      "istilah": [
+        "dengki",
+        "iri"
+      ]
+    },
+    {
+      "topik": "amanah",
+      "kunci": [
+        "amanah",
+        "amanat",
+        "dipercaya"
+      ],
+      "istilah": [
+        "amanat",
+        "dipercayai"
+      ]
+    },
+    {
+      "topik": "janji",
+      "kunci": [
+        "janji",
+        "menepati janji",
+        "ingkar janji"
+      ],
+      "istilah": [
+        "janji",
+        "menepati",
+        "memenuhi janji"
+      ]
+    }
+  ]
+}
