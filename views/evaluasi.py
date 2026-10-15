@@ -10,7 +10,6 @@ from ui import (
     load_json,
     render_footer,
     render_header,
-    render_sidebar_author,
 )
 
 METRICS = ["P@5", "P@5_ketat", "MRR", "nDCG@5", "Recall@10"]
@@ -336,7 +335,6 @@ def main():
         _error_tab()
     with tabs[4]:
         _threshold_tab(config)
-    render_sidebar_author()
     render_footer()
 
 

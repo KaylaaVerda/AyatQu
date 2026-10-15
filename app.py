@@ -8,19 +8,22 @@ from ui import load_css
 
 ROOT = Path(__file__).resolve().parent
 
-st.set_page_config(page_title="AyatQu", page_icon="📖", layout="wide")
+st.set_page_config(page_title="AyatQu", layout="wide")
 load_css()
 
 pages = [
     st.Page(
-        str(ROOT / "views" / "pencarian.py"),
-        title="Pencarian Ayat",
-        icon="🔎",
+        str(ROOT / "views" / "beranda.py"),
+        title="Beranda",
         default=True,
     ),
-    st.Page(str(ROOT / "views" / "evaluasi.py"), title="Evaluasi", icon="📊"),
-    st.Page(str(ROOT / "views" / "ringkasan.py"), title="Ringkasan", icon="📝"),
-    st.Page(str(ROOT / "views" / "tentang.py"), title="Tentang Aplikasi", icon="ℹ️"),
+    st.Page(
+        str(ROOT / "views" / "pencarian.py"),
+        title="Pencarian Ayat",
+    ),
+    st.Page(str(ROOT / "views" / "evaluasi.py"), title="Evaluasi"),
+    st.Page(str(ROOT / "views" / "ringkasan.py"), title="Ringkasan"),
+    st.Page(str(ROOT / "views" / "tentang.py"), title="Tentang Aplikasi"),
 ]
 
-st.navigation(pages, position="sidebar").run()
+st.navigation(pages, position="top").run()

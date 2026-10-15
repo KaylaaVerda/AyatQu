@@ -6,7 +6,7 @@ import streamlit as st
 
 from ui import (
     DOSEN,
-    GITHUB_URL,
+    STREAMLIT_URL,
     MATA_KULIAH,
     NAMA,
     NIM,
@@ -15,7 +15,6 @@ from ui import (
     UNIVERSITAS,
     render_footer,
     render_header,
-    render_sidebar_author,
 )
 
 
@@ -36,10 +35,10 @@ def _technology_chips():
 
 
 def _author_card():
-    github = (
-        f'<a href="{escape(GITHUB_URL, quote=True)}" target="_blank" rel="noopener noreferrer">'
-        "Profil GitHub</a>"
-        if GITHUB_URL
+    streamlit_link = (
+        f'<a href="{escape(STREAMLIT_URL, quote=True)}" target="_blank" rel="noopener noreferrer">'
+        "Buka Aplikasi Streamlit</a>"
+        if STREAMLIT_URL
         else "Belum diisi"
     )
     st.markdown(
@@ -53,7 +52,7 @@ def _author_card():
           <strong>Universitas</strong>: {escape(UNIVERSITAS)}<br>
           <strong>Dosen</strong>: {escape(DOSEN)}<br>
           <strong>Tahun</strong>: {escape(TAHUN)}<br>
-          <strong>GitHub</strong>: {github}</p>
+          <strong>Aplikasi</strong>: {streamlit_link}</p>
         </section>
         """,
         unsafe_allow_html=True,
@@ -113,7 +112,6 @@ def main():
         "Lengkapi detail bibliografi dan tautan sumber sebelum menyerahkan laporan akademik."
     )
 
-    render_sidebar_author()
     render_footer()
 
 

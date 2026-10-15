@@ -8,7 +8,6 @@ from ui import (
     render_ayat_card,
     render_footer,
     render_header,
-    render_sidebar_author,
 )
 
 CONTOH_KUERI = [
@@ -24,7 +23,6 @@ def _show_error(error):
     st.info(
         "Pastikan notebook sudah dijalankan dan file data serta models/best_config.json tersedia."
     )
-    render_sidebar_author()
     render_footer()
 
 
@@ -128,14 +126,6 @@ def main():
         _show_error(error)
         return
 
-    with st.sidebar:
-        st.subheader("Pengaturan pencarian")
-        mode = st.selectbox(
-            "Metode pencarian", list(AyatQu.METHODS), key="search_method"
-        )
-        show_process = st.checkbox("Tampilkan proses kueri", key="show_query_process")
-    render_sidebar_author()
-
     chatbot_tab, guide_tab = st.tabs(["Chatbot", "Cara Mencari Ayat"])
     with chatbot_tab:
         if "ayatqu_chat_history" not in st.session_state:
@@ -144,6 +134,15 @@ def main():
         history = st.session_state["ayatqu_chat_history"]
         pending_query = st.session_state.pop("ayatqu_pending_query", None)
         submitted_query = st.chat_input("Tulis topik atau pertanyaanmu")
+        option_col, process_col = st.columns([1.5, 1], gap="medium")
+        with option_col:
+            mode = st.selectbox(
+                "Metode pencarian", list(AyatQu.METHODS), key="search_method"
+            )
+        with process_col:
+            show_process = st.checkbox(
+                "Tampilkan proses kueri", key="show_query_process"
+            )
         query = pending_query or submitted_query
         if query:
             with st.spinner("Mencari ayat..."):

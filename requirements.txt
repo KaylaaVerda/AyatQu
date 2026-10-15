@@ -13,4 +13,4 @@ altair>=5.0
 # anthropic
 
 # Tahap berikutnya: aplikasi
-streamlit>=1.36
+streamlit>=1.46.0

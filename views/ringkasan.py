@@ -8,7 +8,6 @@ from ui import (
     load_csv,
     render_footer,
     render_header,
-    render_sidebar_author,
 )
 
 
@@ -49,7 +48,6 @@ def main():
         st.info(
             "Jalankan semua sel AyatQu_Pipeline.ipynb, lalu buka kembali halaman ini."
         )
-        render_sidebar_author()
         render_footer()
         return
 
@@ -166,7 +164,6 @@ def main():
     st.write(
         "**Saran pengembangan:** validasi qrels, tambah variasi kueri, dan uji konsistensi hasil dengan penilai manusia."
     )
-    render_sidebar_author()
     render_footer()
 
 
