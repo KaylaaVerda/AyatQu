@@ -294,7 +294,7 @@ def main():
     )
     _render_info_cards(
         [
-            ("Tulis topikmu", "Gunakan kata-kata yang kamu ingat dari keseharian."),
+            ("Tulis topikmu", "Gunakan kata-kata yang kamu ingat dari keseharian atau ayat yang ingin dicari."),
             (
                 "Kueri diperluas dan dicari",
                 "AyatQu mencocokkan istilah terkait lalu memberi peringkat dengan BM25.",
