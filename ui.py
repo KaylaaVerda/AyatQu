@@ -81,10 +81,6 @@ def load_css():
           text-align: center; color: color-mix(in srgb, var(--text-color) 72%, transparent); font-size: .78rem; line-height: 1.7; }
         .ayq-footer strong { color: var(--ayq-emerald); }
         .ayq-section { padding-top: .25rem; }
-        @media (prefers-color-scheme: dark) {
-          :root { --ayq-surface: color-mix(in srgb, var(--secondary-background-color) 86%, #0f766e); }
-          .ayq-card { box-shadow: 0 7px 20px rgba(0, 0, 0, .18); }
-        }
         @media (max-width: 700px) {
           .block-container { padding: 1rem .8rem 1rem; }
           .ayq-hero { padding: 1.2rem 1.1rem; border-radius: 14px; }
@@ -167,13 +163,6 @@ def load_landing_css():
         .ayq-home-cta-title { margin-bottom: .35rem; color: var(--landing-ink); font: 600 1.55rem/1.3 'Playfair Display', Georgia, serif; }
         .ayq-byline { margin-top: 1rem; color: var(--landing-muted); font-size: .78rem; text-align: center; line-height: 1.8; }
         @keyframes ayq-drift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-        @media (prefers-color-scheme: dark) {
-          .stApp:has(.ayq-landing) { --landing-ink: #e9f3ef; --landing-muted: #b7cbc4; --landing-surface: rgba(20,45,42,.88);
-            background: linear-gradient(128deg, #102d29, #24200f); }
-          .ayq-home-title .ayq-title-green { color: #65c8a7; }
-          .ayq-home-title .ayq-title-gold { color: #f0c64e; }
-          .ayq-draft-label { color: #f3d77d; }
-        }
         @media (min-width: 701px) {
           .stApp:has(.ayq-landing) .block-container { max-width: 1400px; }
           .ayq-home-title { font-size: 2.75rem !important; line-height: 1.12; }
