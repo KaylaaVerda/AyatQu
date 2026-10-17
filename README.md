@@ -1,75 +1,115 @@
-# AyatQu
+<div align="center">
 
-Pengembangan Chatbot AyatQu untuk Pencarian Ayat Al-Qur'an Berbasis Topik Menggunakan Retrieval-Augmented Generation dengan Perbandingan TF-IDF dan BM25 serta Perluasan Kueri Bahasa Awam.
+# 📖 AyatQu
 
-Proyek mata kuliah Sistem Temu Kembali Informasi (STKI). Repo ini berisi pipeline evaluasi dan aplikasi Streamlit multi-halaman untuk pencarian ayat.
+### Temukan ayat Al-Qur'an dari topik yang kamu ingat, cukup dengan bahasa sehari-hari.
 
-## Cara menjalankan
+**[🚀 Coba AyatQu Sekarang](https://ayatqu.streamlit.app/)**
 
-Pasang dependensi dari folder proyek:
+</div>
 
-```bash
-python -m pip install -r requirements.txt
+---
+
+## ✨ Apa itu AyatQu?
+
+Pernah ingat topiknya tapi lupa nama surah dan nomor ayatnya? AyatQu dibuat untuk situasi itu.
+
+Ketik saja pertanyaanmu, misalnya **"ayat tentang sabar"** atau **"ayat tentang berbakti kepada orang tua"**. AyatQu akan menampilkan ayat yang paling terkait lengkap dengan **teks Arab, terjemahan Indonesia, nama surah, dan nomor ayat**, lalu memberi ringkasan singkat tentang mengapa ayat tersebut cocok dengan pertanyaanmu.
+
+> ⚠️ **AyatQu adalah alat bantu pencarian, bukan sumber tafsir atau fatwa.** Untuk pemahaman yang lebih dalam dan untuk urusan hukum, rujuklah tafsir resmi dan ulama yang terpercaya.
+
+## 🎯 Masalah yang Ingin Diselesaikan
+
+Pencarian biasa hanya berhasil kalau kata yang kamu ketik sama persis dengan kata di terjemahan. Padahal bahasa sehari-hari sering berbeda. Contohnya, kata *"syukur"* dan *"tawakal"* tidak muncul di terjemahan Kementerian Agama RI, yang ada adalah *"bersyukur"* dan *"bertawakkal"*.
+
+AyatQu menjembatani perbedaan ini dengan **perluasan kueri**: kata dari pengguna dicocokkan dengan kamus istilah awam, lalu diperluas ke kata-kata yang benar-benar dipakai di terjemahan.
+
+## 🚀 Cara Mencoba
+
+1. Buka **[ayatqu.streamlit.app](https://ayatqu.streamlit.app/)**.
+2. Klik **Coba Sekarang**, lalu tulis topik atau pertanyaanmu di kolom chat.
+3. Baca ayat yang muncul beserta ringkasan keterkaitannya.
+
+> 💤 Aplikasi gratis di Streamlit bisa tertidur saat lama tidak dipakai. Kalau muncul tombol untuk membangunkannya, klik saja lalu tunggu beberapa saat.
+
+### Contoh pertanyaan
+
+| Kamu menulis | AyatQu mencari |
+|---|---|
+| `ayat tentang sabar` | Ayat yang membahas kesabaran |
+| `ayat tentang berbakti kepada orang tua` | Ayat tentang berbuat baik kepada ibu bapak |
+| `ayat tentang rezeki` | Ayat tentang rezeki dan karunia Allah |
+| `ayat yang bikin hati tenang` | Ayat tentang ketenangan hati |
+
+### Tips menulis pertanyaan
+
+- Sebutkan **topiknya dengan jelas**, misalnya "ayat tentang sabar saat ujian".
+- Pakai **kata yang umum**, tidak perlu istilah Arab.
+- Kalau hasilnya kurang pas, coba **ganti kata kuncinya** dengan sinonim.
+
+## 🧭 Isi Aplikasi
+
+| Halaman | Isinya |
+|---|---|
+| 🏠 **Beranda** | Pengenalan singkat dan tombol untuk mulai mencoba |
+| 🔎 **Pencarian Ayat** | Chatbot pencari ayat, lengkap dengan panduan cara mencari |
+| 📊 **Evaluasi** | Hasil pengujian dan perbandingan metode pencarian |
+| 📝 **Ringkasan** | Temuan utama, alur sistem, dan kesimpulan |
+| ℹ️ **Tentang Aplikasi** | Latar belakang, teknologi, sumber data, dan penulis |
+
+## ⚙️ Bagaimana AyatQu Bekerja
+
+```mermaid
+flowchart LR
+    A[Pertanyaanmu] --> B[Pembersihan kata]
+    B --> C[Perluasan kueri dengan kamus istilah awam]
+    C --> D[Pencarian BM25 pada 6.236 ayat]
+    D --> E[Penyaringan ayat yang relevan]
+    E --> F[Ayat ditampilkan dari data asli]
+    F --> G[Ringkasan keterkaitan]
 ```
 
-Jalankan semua sel `AyatQu_Pipeline.ipynb` dari atas ke bawah untuk membangun data, konfigurasi, tabel evaluasi, dan grafik. Notebook harus dijalankan dari folder ini (atau subfoldernya). PySastrawi wajib dipasang agar konfigurasi stemming (C3 dan C4) ikut berjalan.
+1. **Pembersihan kata.** Pertanyaanmu dirapikan dan diubah ke bentuk dasar kata agar mudah dicocokkan.
+2. **Perluasan kueri.** Kata sehari-hari diperluas ke kata yang dipakai di terjemahan, sehingga "syukur" juga menemukan ayat dengan kata "bersyukur".
+3. **Pencarian BM25.** Setiap ayat diberi skor kecocokan dengan pertanyaanmu, lalu diurutkan.
+4. **Penyaringan.** Hanya ayat dengan skor cukup tinggi yang ditampilkan. Jika tidak ada yang cocok, AyatQu jujur menjawab bahwa ayat tidak ditemukan.
+5. **Tampil dari data asli.** Teks Arab dan terjemahan selalu diambil langsung dari sumbernya dan tidak pernah ditulis ulang oleh AI.
+6. **Ringkasan keterkaitan.** Ringkasan singkat hanya berdasarkan ayat yang ditemukan, tanpa tafsir.
 
-Setelah notebook selesai, jalankan chatbot:
+### Dibuat dengan prinsip kehati-hatian
 
-```bash
-python -m streamlit run app.py
-```
+- 🔒 **Ayat tidak diubah.** Teks Arab dan terjemahan tampil persis seperti sumber aslinya.
+- 🚫 **Tidak memberi fatwa.** Pertanyaan seperti "apakah ini haram?" tidak dijawab dengan hukum, AyatQu hanya menawarkan ayat yang terkait.
+- ✅ **Rujukan diperiksa.** Ringkasan hanya boleh menyebut ayat yang memang ditemukan oleh pencarian.
+- 🙋 **Jujur saat tidak tahu.** Pertanyaan di luar topik dijawab dengan "tidak ditemukan", bukan dipaksakan.
 
-Di Windows, bila perintah `python` tidak dikenali, gunakan launcher:
+## 🛠️ Teknologi
 
-```powershell
-py -m pip install -r requirements.txt
-py -m streamlit run app.py
-```
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
-Navigasi aplikasi berisi **Pencarian Ayat**, **Evaluasi**, **Ringkasan**, dan **Tentang Aplikasi**. Untuk memakai ringkasan model bahasa, isi API key pada widget password di halaman Pencarian Ayat. API key tidak perlu dimasukkan untuk menggunakan pencarian dan ringkasan lokal.
+**Metode:** Information Retrieval, BM25, TF-IDF, Query Expansion, Retrieval-Augmented Generation (RAG), dan stemming bahasa Indonesia dengan PySastrawi.
 
-## Isi folder
+## 📚 Sumber Data
 
-```
-ayatqu/
-├── app.py                      entrypoint navigasi Streamlit
-├── ui.py                       komponen UI, tema, dan loader data
-├── views/                      empat halaman aplikasi
-├── .streamlit/config.toml      tema Streamlit
-├── ayatqu_core.py              mesin retrieval dan guardrail
-├── AyatQu_Pipeline.ipynb        notebook utama (preprocessing sampai ekspor konfigurasi)
-├── expansion_dict.json          kamus query expansion (untuk divalidasi dosen atau ustaz)
-├── requirements.txt
-├── data/
-│   ├── raw/                     file asli Tanzil (JANGAN DIEDIT)
-│   │   ├── id_indonesian.txt        terjemahan Indonesia (Kemenag RI)
-│   │   └── quran-uthmani.txt        teks Arab Uthmani
-│   ├── processed/
-│   │   └── quran_master.csv         tabel gabungan 6.236 ayat (hasil src/build_dataset.py)
-│   └── eval/
-│       ├── queries.csv              36 kueri uji (30 topik + 6 luar topik), dengan split dev dan test
-│       ├── qrels.csv                kunci jawaban DRAF (lihat peringatan di bawah)
-│       ├── qrels_lembar_validasi.csv   lembar untuk dua penilai manusia
-│       └── expansion_dict_report.csv   frekuensi tiap istilah kamus di korpus
-├── src/build_dataset.py         membangun quran_master.csv dari file mentah (dengan validasi)
-├── outputs/                     (terisi setelah notebook dijalankan) tabel hasil, rubrik chatbot, dll
-├── figures/                     (terisi setelah notebook dijalankan) grafik untuk laporan
-└── models/best_config.json      (terisi setelah notebook dijalankan) konfigurasi untuk aplikasi
-```
+Teks Al-Qur'an (Uthmani) dan terjemahan Indonesia dari Kementerian Agama RI, diambil dari [Tanzil.net](https://tanzil.net).
 
-## Peringatan penting
+## 📝 Catatan
 
-1. **`data/eval/qrels.csv` adalah DRAF yang dibuat oleh asisten AI** dengan membaca teks terjemahan. Berkas ini **belum divalidasi manusia**.
-   Sebelum angka hasil dipakai di laporan atau diuji, serahkan `qrels_lembar_validasi.csv` ke dosen atau ustaz
-   (idealnya dua penilai), hitung Cohen's kappa dengan `finalize_qrels_from_validation()`, lalu jalankan ulang notebook dengan `qrels_final.csv`.
-2. **Kamus ekspansi** (`expansion_dict.json`) disusun manual dan perlu divalidasi.
-3. Kunci jawaban dikumpulkan dengan pooling dari sistem yang diuji, sehingga cenderung menguntungkan BM25 + ekspansi.
-4. Sistem ini alat bantu pencarian, **bukan sumber tafsir atau fatwa**.
-5. Teks Arab dan terjemahan yang ditampilkan tidak pernah diubah. Pembersihan, stopword, dan stemming hanya pada salinan indexing.
+AyatQu adalah proyek akademik yang masih terus dikembangkan, sehingga hasil pencarian belum tentu sempurna. Gunakan hasilnya sebagai titik awal, lalu pastikan pemahamanmu melalui sumber dan ulama yang terpercaya.
 
-## Sumber data
+## 👩‍💻 Penulis
 
-Tanzil.net: teks Al-Qur'an Uthmani dan terjemahan Indonesia dari Kementerian Agama RI. Baca ketentuan penggunaan di situs resminya,
-lalu catat tanggal akses dan kutipan lisensinya di laporan. Terjemahan sumber memiliki typo huruf "I" kapital menggantikan "l"
-(misalnya `SuIaiman`) pada 16 kata, yang hanya diperbaiki pada salinan indexing.
+**Kayla Verda Fawnia Heses**
+NIM: A11.2024.15689
+Proyek mata kuliah **Sistem Temu Kembali Informasi (STKI)**
+
+---
+
+<div align="center">
+
+*AyatQu adalah alat bantu pencarian, bukan sumber tafsir atau fatwa.*
+
+</div>
