@@ -104,7 +104,7 @@ AyatQu adalah proyek akademik yang masih terus dikembangkan, sehingga hasil penc
 
 - Nama : Kayla Verda Fawnia Heses
 - NIM  : A11.2024.15689
-Proyek mata kuliah **Sistem Temu Kembali Informasi (STKI)**
+- Proyek mata kuliah **Sistem Temu Kembali Informasi (STKI)**
 
 ---
 
