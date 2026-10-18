@@ -100,10 +100,10 @@ Teks Al-Qur'an (Uthmani) dan terjemahan Indonesia dari Kementerian Agama RI, dia
 
 AyatQu adalah proyek akademik yang masih terus dikembangkan, sehingga hasil pencarian belum tentu sempurna. Gunakan hasilnya sebagai titik awal, lalu pastikan pemahamanmu melalui sumber dan ulama yang terpercaya.
 
-## 👩‍💻 Penulis
+## 👩‍💻 Pengembang
 
-**Kayla Verda Fawnia Heses**
-NIM: A11.2024.15689
+- Nama : Kayla Verda Fawnia Heses
+- NIM  : A11.2024.15689
 Proyek mata kuliah **Sistem Temu Kembali Informasi (STKI)**
 
 ---
